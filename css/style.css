@@ -32,6 +32,7 @@ header {
     justify-self: center;
     border-bottom: var(--primary) solid 1px;
     background-color: var(--primary);
+    width: 100%;
 }
 
 #headerSection {
@@ -106,7 +107,9 @@ input:checked+.slider:before {
 
 
 /* //TODO MAIN */
-
+main {
+    width: 100%;
+}
 
 #linea {
     width: 600px;
@@ -134,6 +137,7 @@ main section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
 }
 
 main section article {
@@ -158,6 +162,7 @@ li input {
     background-color: var(--primary);
     color: var(--text);
     border: none;
+    width: 100%;
 }
 
 .inputTarea {
@@ -201,6 +206,7 @@ main section div {
 }
 
 
+
 #botonLimpiarTodo {
     width: fit-content;
     background-color: var(--primary);
@@ -232,6 +238,7 @@ main section div {
 
 /* //TODO FOOTER */
 footer {
+    width: 100%;
     border-top: 1px solid var(--primary);
     background-color: var(--primary);
     display: flex;
@@ -274,3 +281,15 @@ a {
     display: flex;
     align-items: center;
 }
+
+@media only screen and (max-width: 468px) {
+    footer {
+        width: 100%;
+    }
+    a {
+        margin-inline: 10px;
+    }
+}
+
+
+
