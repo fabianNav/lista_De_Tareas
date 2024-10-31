@@ -1,50 +1,60 @@
 <!doctype html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista De Tareas</title>
-  </head>
-  <body>
-    <header>
-      <section id="headerSection">
-        <h1>Lista de tareas</h1>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista De Tareas</title>
+</head>
+
+<body>
+  <header>
+    <section id="headerSection">
+      <h1>Lista de tareas</h1>
+    </section>
+    <section>
+      <label class="switch">
+        <input type="checkbox" id="slider">
+        <span class="slider"></span>
+      </label>
+    </section>
+  </header>
+  <main>
+    <section class="container">
+      <article>
+        <span id="linea"></span>
+        <button id="agregarTarea">Agregar Tarea</button>
+      </article>
+      <article>
+        <ul id="lista">
+
+
+        </ul>
+      </article>
+      <div>
+        <button id="botonLimpiarTodo">Limpiar Todo</button>
+      </div>
+      <section id="audio">
+        
       </section>
-      <section>
-        <label class="switch">
-          <input type="checkbox" id="slider">
-          <span class="slider"></span>
-        </label>
-      </section>
-    </header>
-    <main>
-      <section class="container">
-        <article>
-          <span id="linea"></span>
-          <button id="agregarTarea">Agregar Tarea</button>
-        </article>
-        <article>
-          <ul id="lista">
-            
-            
-          </ul>
-        </article>
-        <div>
-          <button id="botonLimpiarTodo">Limpiar Todo</button>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <section>
-        <article>
-          <a href="https://github.com/fabianNav"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/luis-fabian-navarro-a9a42a217/"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://wa.link/4vfimv"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="https://www.instagram.com/fabiannavarro7858?utm_source=qr&igsh=dHE1bXZncHg4OXUz"><i class="fa-brands fa-instagram"></i></a>
-        </article>
-      </section>
-    </footer>
-    <script type="module" src="/main.js"></script>
-    <script src="https://kit.fontawesome.com/5095e6fda6.js" crossorigin="anonymous"></script>
-  </body>
+
+    </section>
+  </main>
+  <footer>
+    <section>
+      <article>
+        <a href="https://github.com/fabianNav"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/luis-fabian-navarro-a9a42a217/"><i
+            class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://wa.link/4vfimv"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/fabiannavarro7858?utm_source=qr&igsh=dHE1bXZncHg4OXUz"><i
+            class="fa-brands fa-instagram"></i></a>
+      </article>
+    </section>
+  </footer>
+  <script type="module" src="/main.js"></script>
+  <script src="https://kit.fontawesome.com/5095e6fda6.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
 </html>

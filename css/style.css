@@ -45,6 +45,7 @@ header section {
     justify-content: end;
     width: 100%;
 }
+
 /* //! MODO OSCURO */
 .switch {
     position: relative;
@@ -105,6 +106,8 @@ input:checked+.slider:before {
 
 
 /* //TODO MAIN */
+
+
 #linea {
     width: 600px;
     height: 3px;
@@ -148,7 +151,8 @@ ul li {
     justify-content: space-between;
 }
 
-ul li, li input {
+ul li,
+li input {
     margin-top: 10px;
     list-style: none;
     background-color: var(--primary);
@@ -172,15 +176,15 @@ ul li, li input {
 }
 
 .eliminar {
-height: fit-content;
-margin-right: 2px;
-background-color: var(--background);
-color: var(--primary);
-border: none;
-padding: 7px;
-border-radius: 10px;
-cursor: pointer;
-border: 1px solid var(--primary);
+    height: fit-content;
+    margin-right: 2px;
+    background-color: var(--background);
+    color: var(--primary);
+    border: none;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid var(--primary);
 }
 
 .eliminar:hover {
@@ -238,4 +242,35 @@ a {
     color: var(--background);
     font-size: 60px;
     margin-inline: 30px;
+}
+
+/* //TODO EVENTOS ESPECIALES */
+
+.navidad {
+    background-image: url(/christmas.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.halloween {
+    background-image: url(/halloween.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* //TODO Eventos especiales */
+.swal2-popup.swal2-modal.swal2-show {
+    background: none;
+    width: 800px;
+}
+
+#swal2-title {
+    color: var(--primary);
+    background-color: var(--background);
+}
+
+#audio {
+    display: flex;
+    align-items: center;
 }

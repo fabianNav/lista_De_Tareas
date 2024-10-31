@@ -1,4 +1,5 @@
 import './css/style.css'
+import Swal from 'sweetalert2'
 
 //TODO MODO OSCURO
 const colorPredeterminado = window.matchMedia('(prefers-color-scheme: noche)').matches ? 'noche' : 'dia';
@@ -165,16 +166,64 @@ const limpiar = () => {
   setContador();
 }
 
+//TODO Eventos especiales
+let fecha = new Date();
+let dia = fecha.getDate();
+let mes = fecha.getMonth() + 1;
+const cuerpo = document.body;
+let audioSection = document.getElementById('audio');
+//? NAVIDAD
+
+
+if (dia == 25 || dia == 24 && mes == 12) {
+  cuerpo.classList.add('navidad');
+  document.addEventListener('DOMContentLoaded', () => {
+    Swal.fire({
+      imageUrl: "/public/christmasPopUp.png",
+      imageHeight: 500,
+      imageAlt: "Navidad",
+      title: 'FELIZ NAVIDAD'
+    });
+    audioSection.innerHTML = 
+    `
+      <audio id="musical" loop controls>
+        <source src="audio/navidadAudio.mp3" type="audio/mp3">
+      </audio>
+    `
+    let musical = document.getElementById('musical');
+    musical.play();
+  })
+} else if (dia !== 24 || dia !== 25 && mes !== 12) {
+  cuerpo.classList.remove('navidad');
+};
+
+//? HALLOWEEN
+if (dia == 31 && mes == 10) {
+  cuerpo.classList.add('halloween');
+  document.addEventListener('DOMContentLoaded', () => {
+    Swal.fire({
+      imageUrl: "/public/halloweenPopUp.png",
+      imageHeight: 500,
+      imageAlt: "Halloween",
+      title: 'FELIZ HALLOWEEN'
+    });
+    audioSection.innerHTML = 
+    `
+      <audio id="musical" loop controls>
+        <source src="audio/halloweenAudio.mp3" type="audio/mp3">
+      </audio>
+    `
+    let musical = document.getElementById('musical');
+    musical.play();
+  })
+} else if (dia !== 24 || dia !== 25 && mes !== 12) {
+  cuerpo.classList.remove('halloween');
+};
+
+
+
 inicilizarContador()
 listarTareas();
-
-
-
-
-
-
-
-
 
 
 
